@@ -1,0 +1,204 @@
+.hero-container {
+  height: calc(100vh - 60px);
+  width: 100%;
+  margin-top: 5.5rem;
+  /* margin-bottom: -5.5rem; */
+}
+
+.hero-wrapper {
+  height: 100%;
+  margin: 0 auto;
+  gap: 15rem;
+}
+
+.hero-left {
+  margin-top: 2rem;
+}
+
+.hero-title {
+  color: #f00;
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.hero-fstmsg {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.hero-fstmsg > span {
+  color: #f00;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+.heroscdmsg {
+  font-size: 26px;
+}
+
+.heroscdmsg > span {
+  font-weight: bold;
+  color: rgb(221, 33, 33);
+}
+
+/* .hero-desc {
+  color: #555;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+  max-width: 350px;
+  line-height: 30px;
+  text-align: center;
+} */
+
+.hero-order-now {
+  background-color: #f00;
+  border-radius: 10px;
+  transition: 150ms all;
+  border: 1px solid #f00;
+}
+
+.hero-available {
+  border-radius: 10px;
+  transition: 150ms all;
+  border: 1px solid #f00;
+}
+
+.available-btn {
+  color: inherit;
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .manmeal > img {
+    display: none;
+  }
+  .hero-container {
+    margin-top: 5.5rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url("../../assets/man-meal.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  .hero-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 80px;
+  }
+  .hero-fstmsg {
+    font-size: small;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: #f00;
+    margin-left: 80px;
+  }
+  .hero-fstmsg > span {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-fstmsg p{
+    color: #fff;
+  }
+  .heroscdmsg {
+    font-size: 25px;
+    margin: 0px 275px;
+    text-align: center;
+  }
+  .hero-desc{
+    color: #555;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-left: 150px;
+  }
+  .heroscdmsg {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .heroscdmsg > span {
+    font-weight: bold;
+    color: rgb(221, 33, 33);
+  }
+}
+@media (max-width: 425px) {
+  .hero-container {
+    margin-top: 5.5rem;
+    padding-top: 100px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url("../../assets/man-meal.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  .hero-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .hero-fstmsg {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 22px;
+    text-align: center;
+    color: #f00;
+  }
+  .hero-fstmsg > span {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 7px;
+    text-align: center;
+    color: #fff;
+  }
+  .hero-fstmsg p{
+    color: #fff;
+  }
+  .heroscdmsg {
+    font-size: 22px;
+    margin: 0px 250px;
+    text-align: center;
+    color: #fff;
+  }
+  .heroscdmsg > span {
+    font-weight: bold;
+    color: rgb(221, 33, 33);
+  }
+  .hero-desc{
+    color: #555;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 30px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  .hero-img{
+    display: none;
+  }
+}
+
+

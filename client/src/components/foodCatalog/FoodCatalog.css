@@ -1,0 +1,134 @@
+.fccontainer {
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.fcwrapper {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fctitle {
+  margin-bottom: 5rem;
+  font-size: 36px;
+  color: #f00;
+}
+
+.fcfoods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+
+.fcfood {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fcimgContainer {
+  width: 450px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.fcimgContainer > img {
+  transition: 250ms all;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fcimgContainer > img:hover {
+  scale: 1.1;
+}
+
+.fcfoodDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin-top: 20px;
+}
+
+.fcfoodTitle {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.fcprice {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.fcprice > span {
+  font-size: 20px;
+  color: #f00;
+}
+
+.fcnoQuantity {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 12.5rem;
+}
+
+@media (max-width: 768px){
+  .fcwrapper {
+    max-width: 768px;
+  }
+  .fcfoods{
+    max-width: 768px;
+  }
+  .fcimgContainer {
+    max-width: 768px;
+    height: 500px;
+    overflow: hidden;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 425px){
+  .fccontainer{
+    padding-top: 100px;
+  }
+  .fcwrapper {
+    max-width: 425px;
+  }
+  .fcfoods{
+    max-width: 425px;
+    margin: 10px;
+  }
+  .fcimgContainer {
+    max-width: 320px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .fcnoQuantity{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 320px){
+  .fcwrapper {
+    max-width: 320px;
+  }
+  .fcfoods{
+    max-width: 320px;
+  }
+  .fcimgContainer {
+    max-width: 300px;
+    height: 350px;
+    overflow: hidden;
+  }
+}
+

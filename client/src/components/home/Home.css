@@ -1,0 +1,37 @@
+.home-container {
+  height: 100%;
+  width: 100%;
+  margin: 200px 0px;
+}
+.delivery-infos {
+  align-items: center;
+  justify-content: center;
+}
+.deliverySubtitle {
+  text-align: center;
+  font-style: 20px;
+  color: #fff;
+}
+.deliveryTitle {
+  text-align: center;
+  color: #f00;
+  font-weight: bold;
+}
+.delivery-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.delivery-info > h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 550;
+}
+
+.homecontainer{
+  overflow: hidden;
+}

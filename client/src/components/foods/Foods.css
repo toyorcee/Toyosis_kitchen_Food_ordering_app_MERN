@@ -1,0 +1,137 @@
+.foodscontainer {
+  height: 100%;
+  width: 100%;
+  margin: 5rem 0;
+  margin-top: 5px;
+  padding-top: 5rem;
+}
+
+.foodswrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.foodssubtitle {
+  text-align: center;
+  font-size: 22px;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.foodstitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #f00;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.foods {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.food {
+  text-decoration: none;
+  color: inherit;
+}
+
+.food > h4 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.foodsimgContainer {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.foodsimgContainer > img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 250ms all ease-in-out;
+}
+
+.foodsimgContainer > img:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  .foods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    max-width: 700px;
+  }
+  .foodscontainer {
+    max-width: 768px;
+  }
+  .foodswrapper {
+    max-width: 700px;
+  }
+}
+@media (max-width: 425px){
+  .foods {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+  .foodscontainer {
+    max-width: 425px;
+  }
+  .foodswrapper{
+    max-width: 400px;
+    margin-top: 200px;
+  }
+  .foodstitle{
+    font-size: 27px;
+  }
+  .foodsimgContainer {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0px 30px
+  }
+}
+@media (max-width: 320px){
+  .foods {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+  .foodscontainer {
+    max-width: 320px;
+  }
+  .foodswrapper{
+    max-width: 250px;
+    margin-top: 100px;
+  }
+  .foodstitle{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 20px;
+  }
+  .foodsimgContainer {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    max-width: 250px;
+    margin: 0px 20px;
+  }
+}

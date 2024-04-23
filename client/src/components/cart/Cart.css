@@ -1,0 +1,236 @@
+.cartcontainer {
+  height: auto;
+  width: 100%;
+  margin: 10rem 0;
+}
+
+.cartwrapper {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.cartleft {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.cartproduct {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cartcloseBtn {
+  position: absolute;
+  left: 25rem;
+  top: 0.25rem;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #f00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.carttitle {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.cartproductData {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartproduct > .cartimg {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+}
+
+.cartprice > span {
+  color: #f00;
+  font-size: 18px;
+}
+
+.cartquantity {
+  font-size: 18px;
+}
+
+.cartright {
+  flex: 1;
+  padding: 1rem;
+  height: 200px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(237, 232, 232);
+  border-radius: 20px;
+}
+
+.carttotalProductMsg {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.cartsubtotalCheckoutBtns {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.cartsubtotal {
+  font-size: 20px;
+  margin-top: 0.5rem;
+  margin-right: 2.5rem;
+}
+
+.cartorderNowBtn {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #f00;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.cartorderNowBtn:hover {
+  border-color: #f00;
+  color: #f00;
+  background-color: #fff;
+}
+
+.cartorderNowBtn:disabled {
+  background-color: #999;
+  color: #fff;
+}
+
+.nocartproducts {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 40px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .cartwrapper {
+    flex-direction: column;
+  }
+  .cartright {
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 400px;
+  }
+  .cartleft {
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+  .cartcloseBtn {
+    position: absolute;
+    left: 20rem;
+    top: 0.5rem;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #f00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+  }
+}
+@media (max-width: 425px) {
+  .cartwrapper {
+    max-width: 200px;
+    margin: 20px;
+  }
+  .cartcontainer {
+    max-width: 200px;
+  }
+  .cartright {
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 300px;
+  }
+  .cartleft {
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    flex-direction: column;
+  }
+  .carttitle {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .cartcloseBtn {
+    position: absolute;
+    left: 20rem;
+    top: 0.5rem;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #f00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+  }
+}
+@media (max-width: 320px) {
+  .cartwrapper {
+    max-width: 200px;
+    margin: 20px;
+  }
+  .cartcontainer {
+    max-width: 200px;
+  }
+  .cartright {
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 300px;
+  }
+  .cartleft {
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    flex-direction: column;
+  }
+  .carttitle {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .cartcloseBtn {
+    position: absolute;
+    left: 17rem;
+    top: 0.5rem;
+    font-size: 10px;
+    cursor: pointer;
+    border: 1px solid #f00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+  }
+}

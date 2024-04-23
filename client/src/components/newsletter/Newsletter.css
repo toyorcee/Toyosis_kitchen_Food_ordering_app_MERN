@@ -1,0 +1,81 @@
+.newscontainer {
+  height: 500px;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding-top: 8rem;
+}
+
+.newswrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newssubtitle {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.newstitle {
+  margin-bottom: 32px;
+  font-size: 40px;
+  color: #f00;
+}
+
+.inputContainer {
+  width: 500px;
+  height: 70px;
+  border: 1px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-radius: 20px;
+}
+
+.inputContainer > input {
+  outline: none;
+  border: none;
+  width: 90%;
+  padding: 1rem 0;
+  transition: 150ms all;
+}
+
+.inputContainer > input::placeholder{
+    font-size: 16px;
+}
+
+.inputContainer > input:focus{
+    padding-left: 0.75rem;
+}
+
+.inputContainer:focus-within{
+    border-color: #333;
+}
+
+.sendIcon{
+    font-size: 25px;
+}
+
+.newsillustration {
+  height: 300px;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 425px){
+  .inputContainer{
+    max-width: 400px;
+  }
+}
+@media (max-width: 375px){
+  .inputContainer{
+    max-width: 300px;
+  }
+  .newstitle{
+    font-size: 30px;
+  }
+}
